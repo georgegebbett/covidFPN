@@ -46,8 +46,11 @@
         <label for="genderO">O</label>
         <input id="genderO" name="gender" type="radio">
         <br>
-        <label for="address">Address</label>
-        <input id="address" maxlength="38" class="offInfoBox">
+        <label for="address1">Address L1</label>
+        <input id="address1" maxlength="19" class="offInfoBox">
+        <br>
+        <label for="address2">Address L2</label>
+        <input id="address2" maxlength="19" class="offInfoBox">
         <br>
         <label for="postcode">Postcode</label>
         <input id="postcode" maxlength="7" style="width: 70px" class="offInfoBox">
@@ -201,8 +204,8 @@
         const dob = document.getElementById("dob").value;
         const surname = document.getElementById("surname").value;
         const forename = document.getElementById("forename").value;
-        const add1 = document.getElementById("address").value.substring(0, 19);
-        const add2 = document.getElementById("address").value.substring(19, 40);
+        const add1 = document.getElementById("address1").value;
+        const add2 = document.getElementById("address2").value;
         const postcode = document.getElementById("postcode").value;
         const telephone = document.getElementById("telephone").value;
         const email = document.getElementById("email").value;
