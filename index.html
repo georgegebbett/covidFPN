@@ -195,7 +195,7 @@
         }
     }
 
-    async function modifyPdf(dodownload) {
+    async function modifyPdf(doDownload) {
 
         const forceCodeNum = document.getElementById("forceCodeNum").value;
         const forceCodeAlpha = document.getElementById("forceCodeAlpha").value;
@@ -930,7 +930,7 @@
 
         // Trigger the browser to download the PDF document
         document.getElementById("pdfEmbed").src = "data:application/pdf;filename=generated.pdf;base64,".concat(pdfBytes);
-        if (dodownload){
+        if (doDownload){
             const pdfFile = await pdfDoc.save()
             download(pdfFile, "Covid FPN ".concat(document.getElementById("forename").value, " ", document.getElementById("surname").value.toUpperCase()), "application/pdf");
         }
